@@ -7,8 +7,8 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   V = analogRead(A0);
-  x = V/1024*5;
-  Serial.print("Volt: ");
-  Serial.println(x);
+  Serial.print(analogRead(A1));
+  Serial.print("\t");
+  Serial.println(V);
   delay(1000);
 }
